@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    background-color: #c7c7c7;
+    background-image: url("ethiopie.jpg");
+    background-size:cover;
+    font-family: Lato;
+    width:100%;
+}
+
+
+h1 {
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px grey;
+    opacity:0.9;
+}
+
+
+#navbar{
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    margin-top:20px;
+    border-radius:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-bottom:20px;
+    box-shadow: 10px 5px 5px grey;
+    opacity:0.9;
+}
+.sNavbar{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* -----------------------------------
+-------- page index --------------- */
+
+#sectionIndex{
+    width: 50%;
+    margin: auto;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px grey;
+    margin-bottom:10px;
+    margin-bottom:10px;
+    background-color: #fff;
+    opacity:0.9;
+    }
+
+article{
+    padding: 20px;
+    opacity:0.9;
+}
+.infos{
+    padding:5px;
+}
+p{
+    text-align: justify;
+}
+.decalage::first-letter{
+margin-left:30px;
+}
+.decalageD{
+text-align: right;
+}
+.centrer{
+margin-left:0px;
+text-align: center;
+}
+
+#aaaaarf{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* -----------------------------------
+-------- page formulaire-- */
+
+#premiereSection{
+width:50%;
+margin:auto;
+margin-top:20px;
+opacity:0.9;
+}
+
+fieldset{
+border-radius:5px;
+box-shadow: 5px 5px 5px grey;
+margin-bottom:10px;
+background-color: #fff;
+opacity:0.9;
+}
+
+/* réglage largeur dans le champs fieldset */
+#mef{
+width:60%;
+margin:auto
+}
+
+.champs{
+display :flex;
+}
+
+/* mise en page label */
+.mep{
+    width : 120px;
+    padding:10px;
+    margin:auto
+} 
+
+/* mise en page input */
+.mep2{
+    padding:10px;
+    margin:auto;
+} 
+
+/* mise en ligne de la case à cocher */
+.enLigne{
+    display : inline;
+}
+
+
+
+
+/* --------------------------------------------les deux pages */
+footer{
+    width: 50%;
+    margin: auto;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px grey;
+    margin-bottom:10px;
+    background-color: #fff;
+    text-align:center;
+    margin-top:20px;
+    opacity:0.9;
+}
+
+#gauche{
+    border-radius:5px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #fff;
+    text-align:center;
+    position:fixed;
+    top : 170px;
+    left:50px;
+    opacity:0.9;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#gaucheBas{
+    border-radius:5px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #fff;
+    text-align:center;
+    position:fixed;
+    top : 260px;
+    left:50px;
+    opacity:0.9;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.lien{
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+}
+#extend{
+    color:blue;
+    text-decoration: underline;
+    font-style: italic;
+}
+#extend:hover{
+    color:black;
+    text-decoration:none;
+    font-style:normal;
+}
+#extended{
+    display: none;
+}

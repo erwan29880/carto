@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Cartographie</title>
+</head>
+<body>
+   
+
+<div class="container">
+
+    <h1>Le voyageur de commerce et l'algorithme génétique</h1>
+
+    <p>Je souhaite visiter quelques monuments classés (source INSEE) à partir de mon domicile, Guissény, et je vais essayer de trouver la plus courte distance afin de ne passer qu'une seule fois par chaque monument. Je souhaite rentrer à mon domicile à la fin de mon trajet. N'hésitez pas à cliquer sur les marqueurs pour tester vos connaissances du patrimoine français !</p>
+
+    <p>Cet exercice, facilement envisageable pour un humain jusqu'à un certain nombre d'étapes, est dans tous les cas très complexe pour une machine. Cette problématique est bien connue sous le nom de 'problème du voyageur de commerce'.<br>
+    Pour tenter de la résoudre, je vais tout d'abord créer une carte selon la logique des 'plus proches voisins', que j'appelle route heuristique, et une deuxième carte qui recherchera une meilleure route à partir de la route logique de départ.<br>
+    Cet optimisation se fait par algorithme génétique : des mutations et transpositions de lieux à visiter sont effectuées, cela amène quelques améliorations !
+    </p>
+
+    <p><strong>La puissance de mon serveur est très limité, les calculs sont longs, soyez patients !</strong></p>
+
+
+       <!-- <p>Distance heuristique : {{ distance }}</p> -->
+        <iframe src="/carte" frameborder="0", width=1000, height=600></iframe>
+   
+
+        <p>Distance optimisée : amélioration de la distance de {{ distance2 }} %</p>
+       
+
+        <form action="/", method='post'>
+            <input type="hidden" name="test" value="3000003">
+            <input type="submit" value="Caluler un meilleur intinéraire" />
+
+        </form>
+
+
+        {% if iframe2 == True %}
+        <iframe src="/carteopt" frameborder="0", width=1000, height=600></iframe>
+        {% endif %}
+
+
+
+
+<p>lien github :  <a href="https://github.com/erwan29880/cartographie" target="_blank">https://github.com/erwan29880/cartographie</a></p>
+</div>
+</body>
+</html>

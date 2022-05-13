@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  web:
+    build: .
+    ports:
+      - "8801:5000"
+    volumes:
+      - .:/code
