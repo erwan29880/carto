@@ -1,4 +1,4 @@
-NB_LIEUX = 45
+NB_LIEUX = 26
 ADRESSE_FICHIER_CSV = "./csv/matrice_od.csv"
 LIEUX_CSV = "./csv/liste_lieux.csv"
 LIEUX_CSV_HEURISTIQUE = "./csv/liste_lieux_heuristique.csv"

@@ -110,3 +110,7 @@ def carteopt():
     
     return render_template('maCarte2.html')
     
+
+# if __name__ == "__main__":
+#     app.run(debug=True)
+    
